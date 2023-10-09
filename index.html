@@ -10,21 +10,12 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <div id="g_id_onload"
-        data-client_id="800753072899-m3cc6us1oq9d6p6qmqr3udosijkuka5p.apps.googleusercontent.com"
-        data-context="signin"
-        data-ux_mode="popup"
-        data-login_uri="https://tornquisterik.github.io/gleanersSignIn/"
-        data-auto_prompt="false">
+         data-client_id="800753072899-m3cc6us1oq9d6p6qmqr3udosijkuka5p.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
     </div>
+    <div class="g_id_signin" data-type="standard"></div>
 
-    <div class="g_id_signin"
-        data-type="standard"
-        data-shape="pill"
-        data-theme="outline"
-        data-text="signin_with"
-        data-size="large"
-        data-logo_alignment="left">
-    </div>
 </body>
 </html>
